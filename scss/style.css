@@ -1,0 +1,439 @@
+/*# sourceMappingURL=style.css.map */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+
+
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+html i, html em,
+html b, html strong,
+html span {
+  transition: none;
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+
+
+
+.centerer {
+  width: 100%;
+}
+
+
+[class^=btn-] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  margin: 30px 0;
+  text-transform: uppercase;
+  /* border: 1px solid currentColor; */
+  border-radius: 50px;
+}
+
+/* 리디자인 버튼 slide-one*/
+.btn-re.one {
+  color: #35424E;
+  background-color: #35424e42;
+  line-height: 60px;
+}
+.btn-re.one span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #35424E;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+.btn-re.one:hover {
+  color: #ffffff;
+}
+.btn-re.one:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re.one:active {
+  background-color: #3b4b5f;
+}
+
+/* 리디자인 버튼 sldie-two */
+.btn-re {
+  color: #5b5b5b;
+  background-color: #2f1f1015;
+  line-height: 60px;
+}
+.btn-re span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #421313;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+.btn-re:hover {
+  color: #ffffff;
+}
+.btn-re:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re:active {
+  background-color: #57743d;
+}
+/* 리디자인 버튼 sldie-three */
+.btn-re.three {
+  color: #100e14;
+  background-color: #342c5415;
+  line-height: 60px;
+}
+.btn-re.three span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #463877;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+.btn-re.three:hover {
+  color: #ffffff;
+}
+.btn-re.three:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re.three:active {
+  background-color: #57743d;
+}
+/* 리디자인 버튼 sldie-four */
+.btn-re.four {
+  color: #100e14;
+  background-color: #342c5415;
+  line-height: 60px;
+}
+.btn-re.four span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #75649b;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+.btn-re.four:hover {
+  color: #ffffff;
+}
+.btn-re.four:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re.four:active {
+  background-color: #65649B;
+}
+
+/* 오리지널 버튼 */
+.btn-or {
+  color: #737373;
+  /* border: 1px solid currentColor; */
+  margin: 0;
+  background-color: #1d1d1d0f;
+  line-height: 60px;
+}
+.btn-or:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #000000;
+  transform: translateX(-100%);
+}
+.btn-or:hover {
+  color: #ffffff;
+}
+.btn-or:hover:before {
+  transform: translateX(0);
+}
+
+
+/* petmood 버튼*/
+.btn-re.one.petmood {
+  color: #3a3a3a;
+  background-color: #f2bd2b36;
+  line-height: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 14px;
+}
+
+.btn-re.one.petmood span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #E4BB74;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+  
+  
+}
+.btn-re.one.petmood:hover {
+  color: #ffffff;
+}
+.btn-re.one.petmood:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re.one.petmood:active {
+  background-color: #F6D16E;
+}
+
+
+
+/* jabala 버튼*/
+.btn-re.one.jabala {
+  color: #3a3a3a;
+  background-color: #3a659c31;
+  line-height: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  font-size: 14px;
+}
+
+.btn-re.one.jabala span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #3A659C;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+  
+  
+}
+.btn-re.one.jabala:hover {
+  color: #ffffff;
+}
+.btn-re.one.jabala:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-re.one.jabala:active {
+  background-color: #3A659C;
+}
+
+
+/* healing-i 버튼*/
+.btn-re.one.healing-i {
+  color: #3a3a3a;
+  background-color: #ffdad950;
+  /* line-height: 60px; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-re.one.healing-i p{
+  line-height: 20px;
+}
+.btn-re.one.healing-i span {
+  position: absolute;
+  /* display: block; */
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #e5bfbd;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+  
+  
+}
+.btn-re.one.healing-i:hover p{
+  color: #ffffff;
+}
+.btn-re.one.healing-i:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+
+
+
+
+
+
+
+/*  View Prototype 버튼 */
+.btn-or.one.portfolio {
+  color: #737373;
+  /* border: 1px solid currentColor; */
+  margin: 0;
+  background-color: #1d1d1d0f;
+  line-height: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  
+}
+.btn-or.one.portfolio span{
+  font-size: 14px;
+  line-height: 100px;
+}
+.btn-or.one.portfolio:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 200px solid #626262;
+  transform: translateX(-100%);
+}
+.btn-or.one.portfolio:hover {
+  color: #ffffff;
+}
+.btn-or.one.portfolio:hover:before {
+  transform: translateX(0);
+}
+
+
+/* sec6 btn */
+.button.dark {
+  --background: #ffffff;
+  --shadow: 0 2px 8px -1px rgba(21, 25, 36, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
+}
+
+.button {
+  --background: #275efe;
+  --text: rgb(137, 137, 137);
+  --font-size: 16px;
+  --duration: .44s;
+  --move-hover: -4px;
+  --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+  --font-shadow: var(--font-size);
+  padding: 17px 26px;
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: var(--font-size);
+  border-radius: 24px;
+  display: block;
+  outline: none;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: 0.5px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y)) translateZ(0);
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  width: 260px;
+  height: 50px;
+  text-align: center;
+}
+.button div {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+.button div span {
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-style: normal;
+  transition: transform var(--duration) ease;
+  transform: translateY(var(--m)) translateZ(0);
+}
+.button div span:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.button div span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.button div span:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.button div span:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.button div span:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.button div span:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.button div span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+.button div span:nth-child(8) {
+  transition-delay: 0.4s;
+}
+.button div span:nth-child(9) {
+  transition-delay: 0.45s;
+}
+.button div span:nth-child(10) {
+  transition-delay: 0.5s;
+}
+.button div span:nth-child(11) {
+  transition-delay: 0.55s;
+}
+.button:hover {
+  --y: var(--move-hover);
+  --shadow: var(--shadow-hover);
+}
+.button:hover span {
+  --m: calc(var(--font-size) * -1);
+}
+.button.reverse {
+  --font-shadow: calc(var(--font-size) * -1);
+
+}
+.button.reverse:hover span {
+  --m: calc(var(--font-size));
+}
+
+
+
