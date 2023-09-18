@@ -68,45 +68,34 @@
         padding: 0 75px;
     }
     .portfolio-logo svg{
-        width: 60px;
+        width: 40px;
     }
+
     .menu-box{
         right: 30px;
     }
-    .page-one-wrap .text-wrap .typing-main{
-        width: 11ch;
-        animation: typing 2s steps(23.5), blink .5s step-end infinite alternate;
-        font-size: 2.5em;
+    .main_text_box{
+        font-size: 1.7rem;
+        width: 600px;
     }
-    .page-one-wrap .text-wrap .typing-sub{
-        width: 12ch;
-        /* animation: typings 2s steps(15), blink-3 .10s step-end infinite alternate; */
-        /* white-space: nowrap; */
-        /* overflow: hidden; */
-        /* border-right: 3px solid; */
-        font-size: 1.8em;
-        position: absolute;
-        top: 60%;
-        transform: translateY(-60%);
-    
-        color: transparent;
-        font-weight: 200;
-        
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
- 
-        
-      }
+    .main_text_box 
+    .blink {
+        font-size: 1.7rem;
+    }
+    .main_text_box .text{
+        width: 600px;
+    }
     .sec2-wrap{
         width: 100%;
-        height: 900px;
+        height: 100%;
+        padding: 60px 0;
     }
     .sec2-wrap .con-wrap .con-left{
-        justify-content: space-between;
         margin-bottom: 40px;
     }
     .sec2-wrap .con-wrap .con-left .my-Information .title{
         font-size: 16px;
+        margin-bottom: 20px;
     }
     .sec2-wrap .con-wrap .con-left .my-Information .title li{
         font-size: 14.5px;
@@ -131,32 +120,26 @@
     .sec2-wrap .con-wrap .con-right .right-txt .one{
         text-align: end;
         max-width: none;
-        font-size: 14px;
-        font-weight: 600;
-        color: #999;
+        font-size: 13.5px;
     }
     .sec2-wrap .con-wrap .con-right .right-txt .two{
         text-align: end;
         max-width: 750px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #999;
+        font-size: 13.5px;
     }.sec2-wrap .con-wrap .con-right .right-txt .three{
         text-align: end;
         max-width: 450px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #999;
+        font-size: 13.5px;
     }
 
     .sec2-wrap .con-wrap .con-left .my-photo{
-        margin-right: 30px;
-        width: 300px;
-        height: 384px;
+        margin-right: 60px;
+        width: 220px;
+        height: 282px;
     }
 
     .sec3-wrap{
-        height: 700px;
+        height: 100%;
     }
     .sec3-wrap .graph-wrap{
         height: none;
@@ -200,6 +183,7 @@
     }
     .swiper-slide{
         flex-direction: column;
+        max-height: 700px;
     }
     .btn-re.one{
         width: 100%;
@@ -223,6 +207,11 @@
         left: -40px;
         width: 200px;
     }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one.genesis .con-left svg{
+        top: 100px;
+        left: -80px;
+        width: 200px;
+      }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.two .con-left svg{
         left: -30px;
         top: 100px;
@@ -244,8 +233,38 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img{
         width: 630px;
+        height: 300px;
         overflow: hidden;
         border-radius: 20px;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover.two{
+        line-height: 300px;
+        height: 300px;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover{
+        line-height: 300px;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.four .con-left .con-img{
+        width: 630px;
+        margin: 0 auto;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.two .con-left .con-img,
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .con-img{
+        width: 630px;
+    }
+    .centerer{
+        padding:  60px;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
     }
     .btn-re.one,
     .btn-re.two,
@@ -279,12 +298,64 @@
     .menu-box{
         top: 35%;
     }
+
+    .app-ui img{
+        width: 250px;
+        height: 542px;
+        position: absolute;
+        /* 부모의 왼쪽 상단에 달라붙게되는 속성(이미지가 포개어져서 하나로 보임) */
+        transition: 0.5s;
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .app-ui{
+        width: 250px;
+      height: 445px;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .app-ui img{
+      width: 250px;
+      height: 445px;
+      border-radius: 0 0 50px 50px
+    }
+    .app-ui{
+      box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
+      /* box-shadow: x축 y축 퍼짐정도 색상; */
+      width: 250px;
+        height: 542px;
+    }
+    
+    
+    .app-ui img:nth-child(1){
+        transform: translate(60px, -60px);
+        /* x축 y축 둘 다 설정 */
+        opacity: 0.4;
+    }
+    
+    .app-ui img:nth-child(2){
+        transform: translate(120px, -120px);
+        opacity: 0.6;
+    }
+    
+    .app-ui img:nth-child(3){
+        transform: translate(180px, -180px);
+        opacity: 0,8;
+    }
+    
+    .app-ui img:nth-child(4){
+        transform: translate(240px, -240px);
+    }
     .sec5-wrap .swiper .swiper-wrapper .swiper-backface-hidden .swiper-slide{
         display: flex;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-left{
         padding-top: 0;
-        height: 500px;
+        height: 430px;
+        margin-right: 0;
+    }
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left{
+        padding-top: 60px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         width: 50%;
@@ -334,10 +405,12 @@
         font-size: 20px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
-        font-size: 14px;
+        font-size: 13.5px;
     }
-
-
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li:nth-child(4),
+    .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li:nth-child(5){
+        display: none;
+    }
 
     .sec6-wrap{
         padding: 80px 0;

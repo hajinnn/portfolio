@@ -1,7 +1,24 @@
 $(document).ready(function(){
 
+
   //AOS
   AOS.init();
+
+    // 메인페이지 텍스트효과
+    const content = "Hello Introducing, \n my web publisher portfolio                            ";
+    const text = document.querySelector(".text");
+    let i = 0;
+  
+    function typing(){
+      let txt = content[i++];
+      text.innerHTML += txt=== "\n" ? "<br/>": txt;
+      if (i > content.length) {
+          text.textContent = "";
+          i = 0;
+        }
+    }
+  setInterval(typing, 100);
+
 
   //안에 sec3 원형그래프 속성 담기
   function skillScroll() {
@@ -17,7 +34,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -39,7 +56,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -60,7 +77,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -81,7 +98,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -103,7 +120,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -124,7 +141,7 @@ $(document).ready(function(){
           gradientAngle: Math.PI / 2
         },
         animation:{
-          duration:2000,
+          duration:2500,
           easing:"swing"
         },
         lineCap : "butt",
@@ -145,7 +162,7 @@ $(document).ready(function(){
             gradientAngle: Math.PI / 2
           },
           animation:{
-            duration:2000,
+            duration:2500,
             easing:"swing"
           },
           lineCap : "butt",
@@ -167,7 +184,7 @@ $(document).ready(function(){
             gradientAngle: Math.PI / 2
           },
           animation:{
-            duration:2000,
+            duration:2500,
             easing:"swing"
           },
           lineCap : "butt",
@@ -188,7 +205,7 @@ $(document).ready(function(){
             color:["#cccccc"],
           },
           animation:{
-            duration:2000,
+            duration:2500,
             // easing:"swing"
           },
           lineCap : "butt",
@@ -197,11 +214,8 @@ $(document).ready(function(){
           }).on('circle-animation-progress', function(event, progress) {
                 $(this).find('strong').html(Math.round(perNummmmmm * progress) + '<i>%</i>');
           });
-
   }
   
-
-
 
 // 풀페이지 슬라이드 (메뉴클릭)
 
@@ -247,9 +261,7 @@ $('.menu').click(function(){
   $(window).scroll(function(){
     let sct = $(window).scrollTop();
 
-
-    
-    var scroll = $('.sec3-wrap').height() + 800;
+    var scroll = $('.sec3-wrap').height() + 400;
     
     console.log("scroll: " + scroll + "sct: " + sct);
     
@@ -267,31 +279,37 @@ $('.menu').click(function(){
         // $('header').fadeIn(500);
         // 500으로 적게되면 0.5 초로 페이드 아웃됌
         $('.menu').removeClass('active');
+        $('.portfolio-logo svg').removeClass('active');
     }else if(sct >= wh && sct < wh*2){
         // 두번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(1).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*2 && sct < wh*3){
         // 세번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(2).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*3 && sct < wh*4){
         // 네번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(3).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*4 && sct < wh*5){
         // 다섯번째 영역
         $('.menu').removeClass('on');
         $('.menu').eq(4).addClass('on');
         $('.menu').addClass('active');
+        $('.portfolio-logo svg').addClass('active');
     }else if(sct >= wh*5){
       // 여섯번째 영역
       $('.menu').removeClass('on');
       $('.menu').eq(5).addClass('on');
       $('.menu').addClass('active');
+      $('.portfolio-logo svg').addClass('active');
 
   }
   });
@@ -336,24 +354,32 @@ $('.menu').click(function(){
     });
 
     // 헤더 스크롤 이벤트 (portfolio-logo svg)
-    $(window).scroll(function(){
-      const sct = $(window).scrollTop();
-      if(sct >= 800){
-          $('.portfolio-logo svg').addClass('active');
-      }else{
-          $('.portfolio-logo svg').removeClass('active');
-      }
-    });
+    // $(window).scroll(function(){
+    //   const sct = $(window).scrollTop();
+    //   if(sct >= 800){
+    //       $('.portfolio-logo svg').addClass('active');
+    //   }else{
+    //       $('.portfolio-logo svg').removeClass('active');
+    //   }
+    // });
    
 
 
     //상단이동버튼
+    // const btn = $('.top-btn');
+    // $(window).scroll(function(){
+    //   if($(window).scrollTop() > 300){
+    //       btn.fadeIn();
+    //   }else{
+    //       btn.fadeOut();
+    //   }
+    // });
     const btn = $('.top-btn');
     $(window).scroll(function(){
       if($(window).scrollTop() > 300){
-          btn.fadeIn();
+          btn.addClass('active');
       }else{
-          btn.fadeOut();
+          btn.removeClass('active');
       }
     });
 
