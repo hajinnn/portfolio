@@ -290,9 +290,9 @@
         text-align: center;
         margin: 0 auto;
     }
-    /* .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li:nth-child(3){
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one.dior .con-right .txt-box .data-box li:nth-child(3){
         display: none;
-    } */
+    }
     
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-left{
         width: 100%;

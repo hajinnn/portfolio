@@ -98,7 +98,7 @@
         margin-bottom: 20px;
     }
     .sec2-wrap .con-wrap .con-left .my-Information .title li{
-        font-size: 14.5px;
+        font-size: 12px;
     }
     .sec2-wrap .con-wrap{
         flex-direction: column;
@@ -113,23 +113,23 @@
     }
     .sec2-wrap .con-wrap .con-right .right-txt h1{
         text-align: end;
-        margin-bottom: 40px;
-        font-size: 22px;
-        max-width: 410px;
+        margin-bottom: none;
+        font-size: 18px;
+        /* max-width: 410px; */
     }
     .sec2-wrap .con-wrap .con-right .right-txt .one{
         text-align: end;
         max-width: none;
-        font-size: 13.5px;
+        font-size: 12px;
     }
     .sec2-wrap .con-wrap .con-right .right-txt .two{
         text-align: end;
         max-width: 750px;
-        font-size: 13.5px;
+        font-size: 12px;
     }.sec2-wrap .con-wrap .con-right .right-txt .three{
         text-align: end;
         max-width: 450px;
-        font-size: 13.5px;
+        font-size: 12px;
     }
 
     .sec2-wrap .con-wrap .con-left .my-photo{
@@ -197,7 +197,7 @@
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         margin-left: 0;
@@ -228,8 +228,9 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
         margin-top: 30px;
     }
+  
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .header-txt h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img{
         width: 630px;
@@ -257,9 +258,9 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.three .con-left .con-img{
         width: 630px;
     }
-    .centerer{
+    /* .centerer{
         padding:  60px;
-    }
+    } */
     .swiper-button-next{
         display: none;
     }

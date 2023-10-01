@@ -5,7 +5,7 @@ $(document).ready(function(){
   AOS.init();
 
     // 메인페이지 텍스트효과
-    const content = "Hello Introducing, \n my web publisher portfolio                            ";
+    const content = "Web Publishing Portfolio \n for \n SATISFACTORY EXPERIENCE                           ";
     const text = document.querySelector(".text");
     let i = 0;
   

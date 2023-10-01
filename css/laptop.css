@@ -2,6 +2,9 @@
 /* 윈도우 크기가 1700px 이하 ~ 1600 px 이상일때 */
 
 @media all and (max-width:1700px) and (min-width:1600px){
+    .top-btn{
+        right: 40px;
+    }
     .menu-box{
         right: 28px;
     }
@@ -33,6 +36,9 @@
     }
 }
 @media all and (max-width:1599px) and (min-width:1200px){
+    .top-btn{
+        right: 38px;
+    }
     .sec2-wrap .con-wrap .con-left .my-photo{
         width: 250px;
         height: 300px;
@@ -43,14 +49,14 @@
     .sec2-wrap .con-wrap .con-left .my-Information .title li{
         font-size: 14px;
     }
-    .sec2-wrap .con-wrap .con-right .right-txt{
+    /* .sec2-wrap .con-wrap .con-right .right-txt{
         max-width: 300px;
-    }
+    } */
     .sec2-wrap .con-wrap .con-right .right-txt h1{
         font-size: 20px;
     }
     .page.two{
-        padding: 80px 80px;
+        padding: 80px 130px;
     }
     .sec2-wrap .con-wrap .con-right .right-txt .one{
         max-width: none;
@@ -100,14 +106,14 @@
     .swiper-button-prev{
         left: 12px;
     }
-    .btn-re.one{
+    /* .btn-re.one{
         height: 50px;
         line-height: 50px;
     }
     .btn-or.one{
         height: 50px;
         line-height: 50px;
-    }
+    } */
 }
 /* 윈도우 크기가 1199px 이하 ~ 960 px 이상일때 -> 최대(max-width) 1199px    최소(min-width) 960px */
 
@@ -129,7 +135,7 @@
         left: -90px;
     }
     .page:nth-child(2){
-        padding: 0 75px;
+        padding: 0 140px;
     }
     .portfolio-logo svg{
         width: 50px;
@@ -165,6 +171,13 @@
     .sec2-wrap .con-wrap .con-left .my-Information{
         width: 50%;
     }
+    .sec2-wrap .con-wrap .con-left .my-Information .title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .sec2-wrap .con-wrap .con-left .my-Information .title li{
+        font-size: 12px;
+    }
     .sec2-wrap .con-wrap .con-right .right-txt{
         max-width: none;
         align-items: flex-end;
@@ -173,28 +186,28 @@
     .sec2-wrap .con-wrap .con-right .right-txt h1{
         text-align: end;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 18px;
         max-width: 480px;
     }
     .sec2-wrap .con-wrap .con-right .right-txt .one{
         text-align: end;
         max-width: none;
-        font-size: 14px;
+        font-size: 12px;
     }
     .sec2-wrap .con-wrap .con-right .right-txt .two{
         text-align: end;
         max-width: 750px;
-        font-size: 14px;
+        font-size: 12px;
     }.sec2-wrap .con-wrap .con-right .right-txt .three{
         text-align: end;
         max-width: 1000px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .sec2-wrap .con-wrap .con-left .my-photo{
         margin-right: 80px;
-        width: 250px;
-        height: 320px;
+        width: 230px;
+        height: 294px;
     }
 
     .sec3-wrap{
@@ -209,8 +222,8 @@
         justify-content: center;
     }
     .sec3-wrap .graph-wrap .top-graph .top-graph-tap{
-        width: 350px;
-        margin: 0 40px;
+        width: 310px;
+        margin: 0 20px;
     }
     .sec3-wrap .graph-wrap .bottom-graph .bottom-graph-tap:first-child{
         margin-right: 0;
@@ -238,13 +251,11 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
         text-align: center;
     }
+    
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
         text-align: center;
+        font-size: 13px;
     }
-    /* .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one .con-right .txt-box .data-box li:nth-child(3),
-    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li:nth-child(4){
-        display: none;
-    } */
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         margin-left: 0;
     }
@@ -275,17 +286,27 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
         margin-top: 30px;
     }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .header-txt{
+        margin-bottom: 16px;
+    }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .header-txt h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img{
         overflow: hidden;
         border-radius: 20px;
         height: 350px;
         margin: 0 auto;
+        width: 80%;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.one.genesis .con-left .con-img{
+        width: 91%;
+    }
+    .sec4-wrap .swiper .swiper-wrapper .swiper-slide.two .con-left .con-img{
+        width: 73%;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide.four .con-left .con-img{
-        width: 80%;
+        width: 66.7%;
     }
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover{
         line-height: 350px;
@@ -293,9 +314,9 @@
     .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-left .con-img .con-img-hover.two{
         height: 350px;
     }
-    .centerer{
+    /* .centerer{
         padding: 0 120px;
-    }
+    } */
     .swiper-button-next{
         display: none;
     }
@@ -388,11 +409,11 @@
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
         text-align: start;
         /* float: right; */
-        width: 600px;
+        width: 450px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right{
         display: flex;
-        width: 80%;
+        width: 70%;
         justify-content: space-between;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .centerer{
@@ -418,7 +439,7 @@
         margin-bottom: 30px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box .data-box li{
-        font-size: 14px;
+        font-size: 13px;
     }
     .sec5-wrap .swiper .swiper-wrapper .swiper-slide.three .ui-logo svg{
         left: 200px;
