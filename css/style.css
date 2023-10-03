@@ -566,7 +566,9 @@ section {
   .sec3-wrap .graph-wrap .top-graph .top-graph-wrap .icon-box img:first-child{
     margin-right: 12px;
   }
-  
+  .sec3-wrap .graph-wrap .top-graph .top-graph-wrap .icon-box.js img:first-child{
+    margin-right: 0;
+  }
   
   .sec3-wrap .graph-wrap .top-graph .top-graph-wrap .icon-txt{
     font-size: 14px;
