@@ -814,6 +814,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
   }
   .sec4-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
     text-align: end;
@@ -944,6 +945,7 @@ section {
   width: 420px;
   margin-left: 60px;
   /* margin-bottom: 30px; */
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .sec5-wrap .swiper .swiper-wrapper .swiper-slide .con-right .txt-box{
   text-align: end;
